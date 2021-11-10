@@ -3,7 +3,7 @@ services:
   database: 
     image: "postgres:latest"
     volumes: 
-      -  $HOME/docker/volumes/postgres:/app
+      - ./server/database:/var/lib/postgresql/data
     networks: 
       - my_network
     container_name: database
