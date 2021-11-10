@@ -3,7 +3,7 @@ services:
   database: 
     image: "postgres:latest"
     volumes: 
-      -  "$HOME/docker/volumes/postgres:/app"
+      -  $HOME/docker/volumes/postgres:/app
     networks: 
       - my_network
     container_name: database
@@ -26,7 +26,7 @@ services:
     environment:
       DB_CONNECTION_STRING: postgres://postgres:docker@database:5432/database
     volumes: 
-      -  "./server:/app"
+      -  ./server:/app
 
   frontend: 
     networks: 
@@ -38,7 +38,7 @@ services:
     depends_on: 
       - server
     volumes: 
-      -  "./front-end:/app"
+      -  ./front-end:/app
 
 networks:  
   my_network: 
