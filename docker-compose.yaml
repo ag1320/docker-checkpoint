@@ -37,8 +37,6 @@ services:
     container_name: frontend
     depends_on: 
       - server
-    volumes: 
-      -  ./front-end:/app
 
 networks:  
   my_network: 

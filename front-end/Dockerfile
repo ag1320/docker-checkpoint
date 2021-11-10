@@ -1,5 +1,5 @@
 #version
-FROM node:14-alpine
+FROM node:14.18.1-alpine
 
 #creat container directory
 RUN mkdir /app
