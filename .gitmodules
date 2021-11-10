@@ -1,0 +1,3 @@
+[submodule "chuck-norris"]
+	path = chuck-norris
+	url = ./front-end/chuck-norris
