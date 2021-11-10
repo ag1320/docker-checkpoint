@@ -14,6 +14,5 @@ COPY . /app
 EXPOSE 3000
 
 #run commands
-RUN ls -a
 RUN npm install
 CMD npm start
