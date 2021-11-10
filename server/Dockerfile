@@ -11,9 +11,8 @@ WORKDIR /app
 COPY . /app
 
 #expose the port
-EXPOSE 3000
+EXPOSE 3001
 
 #run commands
-RUN npm install nodemon
 RUN npm install
 CMD npm start
